@@ -1,0 +1,8 @@
+/*header и лого*/
+.background-violet{
+    background-color: #e1cde1;
+    background-size: contain;
+}
+header>img{
+    width: auto;
+}
