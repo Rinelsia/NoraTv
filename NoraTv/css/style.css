@@ -1,8 +1,33 @@
-/*header и лого*/
-.background-violet{
-    background-color: #e1cde1;
-    background-size: contain;
+/*подключение шрифта*/
+@font-face{
+    font-family: d_CCMatinee;
+    src: url(../fonts/d_CCMatinee.otf);
 }
-header>img{
-    width: auto;
+@font-face{
+    font-family: Halimun;
+    src: url(../fonts/Halimun.ttf);
+}
+@font-face{
+    font-family: Porcelain;
+    src: url(../fonts/Porcelain.ttf);
+}
+/*header и лого*/
+header{
+    background-color: #561375;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+header .order-2{
+    text-align: right;
+    font-family: Porcelain;
+    font-size: 31pt;
+    word-spacing: 1rem;
+}
+/**/
+nav{
+    text-align: center;
+    font-size: 20pt;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
