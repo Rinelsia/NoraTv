@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+   <section class="container row" id="modal">
+           <div class="row">
+               <div class="video">
+                   <video controls></video>
+               </div>
+               <div class="carucel"></div>
+           </div>
+   </section>
+    <header class="container">
         <div class="container">
             <div class="row">
-                <div class="col-2 order-1">NoraTv</div>
+                <div class="col-2 order-1 ">NoraTv</div>
                 <div class="col-10 order-2">Элеонора Ларина</div>
             </div>
         </div>
@@ -18,9 +27,9 @@
     <nav class="container">
        <div class="row">
            <div class="col-12 order-1">
-               <a href="" class="col-auto">Главная</a>
-               <a href="" class="col-auto">Статьи</a>
-               <a href="" class="col-auto">Видео</a>
+               <a href="index1.html" class="col-auto">Главная</a>
+               <a href="index2.html" class="col-auto">Статьи</a>
+               <a href="index3.html" class="col-auto">Видео</a>
                <a href="" class="col-auto">О нас</a>
                <form class="col-auto" action="">
                    <input type="text">
@@ -30,42 +39,172 @@
     </nav>
     <main class="container">
         <div class="row">
-            <div class="col-3">
-                <div class="block" id="block-1">
-                  <img src="img/NjraTv_krasn_plat.jpg" alt="">
-                  <h1>Заголовок</h1>
-                   <p>Пояснение статьи</p>
+<!--           карточка 1-->
+            <div class="block col-xl-3 col-lg-4 col-md-6 col-12" id="block-1">
+                <div class="h">
+                    <h1>Алые паруса</h1>
+                </div>
+                <div class="back-img">
+                  <p>История о том, как мы ходили на алые паруса...</p>                 
                 </div>
             </div>
-            <div class="col-3">
+<!--               карточка 2-->
+            <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="block" id="block-2">
-                    <img src="img/NjraTv_krasn_plat.jpg" alt="">
-                    <h1>Заголовок</h1>
-                    <p>Пояснение статьи</p>
+                  <div class="img"><img src="img/img1.jpg" alt=""></div>
+                  <div class="row info">
+                      <div class="col-5">Статья</div>
+                      <div class="col-2 circle">
+                          <img src="img/new-label.png" alt="">
+                      </div>
+                      <div class="col-5">26.07.2019</div>
+                  </div>
+                  <div class="col-12 p"><p>Пояснение статьи</p></div>
+                  <div class="autor">Автор: Уксусов Петр</div>
                 </div>
             </div>
-            <div class="col-3">
+<!--            карточка 3-->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="block" id="block-3">
-                    <img src="img/NjraTv_krasn_plat.jpg" alt="">
-                    <h1>Заголовок</h1>
-                    <p>Пояснение статьи</p>
+                 <div class="hover">
+                     <div class="hidden">
+                         <p>Далее</p>
+                     </div>
+                 </div>
+                  <div class="img"></div>
+                  <div class="row info">
+                      <div class="col-5">Статья</div>
+                      <div class="col-2 circle">
+                          <img src="img/new-label.png" alt="">
+                      </div>
+                      <div class="col-5">26.07.2019</div>
+                  </div>
+                  <div class="col-12 p"><p>Пояснение статьи</p></div>
+                  <div class="autor">Автор: Уксусов Петр</div>
                 </div>
             </div>
-            <div class="col-3">
+<!--            карточка 4-->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="block" id="block-4">
-                    <img src="img/NjraTv_krasn_plat.jpg" alt="">
-                    <h1>Заголовок</h1>
-                    <p>Пояснение статьи</p>
+                  <div class="img"><img src="img/img2.jpg" alt=""></div>
+                  <div class="row info">
+                      <div class="col-5">Статья</div>
+                      <div class="col-2 circle">
+                          <img src="img/new-label.png" alt="">
+                      </div>
+                      <div class="col-5">26.07.2019</div>
+                  </div>
+                  <div class="col-12 p"><p>Пояснение статьи</p></div>
+                  <div class="autor">Автор: Уксусов Петр</div>
                 </div>
             </div>
+<!--       карточка 5     -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-5">
+                  <div class="video">
+                      <video controls>
+                          <source src="video/video_4.mp4">
+                      </video>
+                  </div>
+                </div>
+            </div>
+<!--    6   -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-6">
+                  <div class="video">
+                      <video controls>
+                          <source src="video/video_2.mp4">
+                      </video>
+                  </div>
+                </div>
+            </div>
+<!--   7    -->
+             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-7">
+                 <div class="hover">
+                     <div class="hidden">
+                         <p>Далее</p>
+                     </div>
+                 </div>
+                  <div class="img"></div>
+                  <div class="row info">
+                      <div class="col-5">Статья</div>
+                      <div class="col-2 circle">
+                          <img src="img/new-label.png" alt="">
+                      </div>
+                      <div class="col-5">26.07.2019</div>
+                  </div>
+                  <div class="col-12 p"><p>Пояснение статьи</p></div>
+                  <div class="autor">Автор: Уксусов Петр</div>
+                </div>
+            </div>
+<!--     8  -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-8">
+                  <div class="video">
+                      <video controls>
+                          <source src="video/video_2.mp4">
+                      </video>
+                  </div>
+                </div>
+            </div>
+<!--      9      -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-5">
+                  <div class="video">
+                      <video controls>
+                          <source src="video/video_3.mp4">
+                      </video>
+                  </div>
+                </div>
+            </div>
+<!--            -->
+            <div class="block col-xl-3 col-lg-4 col-md-6 col-12 back-fon" >
+                <div id="block-1">
+                    <div class="h-1">
+                        <h1>Алые паруса</h1>
+                        <p>История о том, как мы ходили на алые паруса...</p>
+                    </div>
+                </div>
+            </div>
+<!--            -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block" id="block-5">
+                  <div class="video-hover">
+                      <div id="video"></div>
+                  </div>
+                  <video controls>
+                       <source src="video/video_3.mp4">
+                  </video>
+                </div>
+            </div>
+<!--            -->
+<!--            -->
+<!--            -->
         </div>
     </main>
     <footer class="container">
         <div class="row">
-            <div class="col-4">1</div>
-            <div class="col-4">2</div>
-            <div class="col-4">3</div>
+            <div class="col-6">
+                <p>
+                    Контакты: Элеонора Ларина <br>      +79777777777
+                </p>
+                
+            </div>
+            <div class="col-6">
+              <div class="row offset-2">
+                   <div class="col-9">
+                        <a href="https://vk.com/nora_larina">
+                            <img src="img/vk-social-logotype.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/instagram-logo.png" alt="">
+                        </a>
+                </div>
+              </div>
+            </div>
         </div>
     </footer>
+    <script src="js/upravlenie.js"></script>
 </body>
 </html>

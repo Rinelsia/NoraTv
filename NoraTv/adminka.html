@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Админка</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/adminpanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="col-3">
+               <div class="select">Перейти на сайт</div>
+                <div class="select" id="select-1">
+                    Редактор статей
+                </div>
+                <div class="select">
+                    Редактор видео
+                </div>
+            </nav>
+            <main class="col-9">
+                <form action="" method="post" id="form">
+                    <input name="img" type="file" placeholder="Заставка статьи" title="Изображение">
+                    <input name="h" type="text" placeholder="Название статьи">
+                    <div class="instrument container row">
+                        <div class="col-1" id="click-img">img</div>
+                        <div class="col-1" id="click-b"><b>Ж</b></div>
+                        <div class="col-1" id="click-h">З</div>
+                    </div>
+                    <p> <textarea name="text" id="val"></textarea></p>
+                    <input type="submit" id="submit">
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
