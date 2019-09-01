@@ -14,7 +14,7 @@
 body{
     background-color: beige;
 }
-header, nav, main{
+header, nav, main .row{
     background-color: white;
 }
 /*header и лого*/
@@ -30,9 +30,9 @@ header .order-2{
     font-size: 31pt;
     word-spacing: 1rem;
 }
-/**/
+/*Навигация*/
 nav{
-    text-align: center;
+    text-align: right;
     font-size: 20pt;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -41,23 +41,227 @@ nav input{
     width: 15rem;
     height: 20pt;
 }
-form{
-    float: right;
+nav .col-12 a{
+    margin-right: 4%;
+    text-decoration: none;
+    color: #777777;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
-/**/
+nav .col-12 form{
+    float: right;
+    padding-left: 4%;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/*hover a*/
+nav .col-12 a:hover{
+    background-color: #390056;
+    color: #ffffff;
+}
+/* Тело сайта, настройка блоков*/
 main{
-    font-size: 16pt;
+    font-size: 14pt;
+}
+main .row{
+    padding-bottom: 1rem;
+}
+.autor, .block .col-5:nth-of-type(3){
+    color: #888888;
 }
 main .col-3{
     margin-bottom: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.block{
-    height: 28rem;
+main .info{
+    margin: 0;
+    height: 10%;
+}
+main .block{
+    height: 18rem;
     margin-top: 2rem;
-    overflow: hidden;
-    box-shadow: 0px 0px 1px rgba(200,200,200,0.25), 1px 1px 0px rgba(200,200,200,0.12);
+    overflow: hidden;    
+    box-shadow: 1px 0px 8px rgba(100,100,200,0.25), 0px 0px 7px rgba(150,150,200,0.17);
+    cursor: pointer;
 }
-main img{
+/*Блок hover в main колонка 3*/
+main .block {
+    box-shadow: 1px 0px 8px rgba(100,100,200,0.25), 0px 0px 7px rgba(150,150,200,0.17);
+}
+main .hover{
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+/*    transform: scaleX(0.98);*/
+    left: 3%;
+    height: 93%;
+    z-index: 100;
+}
+.block .hidden{
+    width: 94%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
+    visibility: hidden;
+}
+.hidden p{
+    margin: 0;
+    padding-top: 5em;
+    font-size: 24pt;
+}
+.hover:hover .hidden{
+    visibility: visible;
+    z-index: 100;
+}
+/*конец стилей колонки 3 дла ховер*/
+/*карточка 1 отклик на наведение изменение тени*/
+#block-1:hover, #block-2:hover{
+     box-shadow: 10px 8px 22px rgba(50,50,50,0.5), -10px 0px 16px rgba(100,67,80,0.5);
+}
+/**/
+main .img img{
     width: 100%;
+    max-height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+main video{
+    width: 100%;
+    max-height: 56.25%;
+}
+main .video{
+    height: 100%;
+}
+main .p{
+    height: 24%;
+}
+.circle{
+    transform: translateY(-43%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+}
+.block div{
+     width: 100%;
+     padding: 0;
+}
+.block .col-5:nth-of-type(3) {
+    text-align: right;
+}
+.block img{
+    width: 76%;
+    margin-top: 8%;
+}
+/*footer*/
+
+footer img {
+    height: 20px;
+    margin-left: 4%;
+}
+footer .row{
+    margin-top: 16px;
+}
+footer.container {
+    font-family: sans-serif;
+    color: lightslategray;
 }
 /*Данная информация будет предоставлена от сервер, здесь просто набросок*/
+
+main .img{
+    background-color: chartreuse;
+    height: 50%;
+}
+/*block-1 id примерный вариант еще одного вида*/
+#block-1{
+    background-image: url(../img/P_20190624_013408.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+}
+#block-1 .back-img{
+    margin-top: 50%;
+    background-color: #ffffff;
+    padding-top: 0.1em;
+}
+#block-1 .h{
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(25, 10, 50, 0.5);
+    text-align: center;
+    font-size: small;
+}
+#block-7 .img{
+    background-image: url(../img/P_20190624_013408.jpg);
+}
+/*10 */
+.back-fon{
+    background-color: rgba(0, 34, 120, 1);
+    padding: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+.back-fon h1{
+    margin-top: 0;
+}
+.back-fon p{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.back-fon .h-1{
+    text-align: center;
+        background-color: rgba(66, 22, 95, 0.62);
+    height: 100%;
+}
+/**/
+/**/
+main .text{
+    text-align: justify;
+}
+/*
+Юлок представления карточки видео
+*/
+.block .video-hover{
+    position: absolute;
+    height: 51.25%;
+    width: 92%;
+    z-index: 100;
+}
+main #video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(7, 0, 14), rgba(5, 14, 31, 0.7));
+    visibility: hidden;
+    z-index: -100;
+}
+.video-hover:hover #video{
+   visibility: visible;
+}
+/*Большой блок секции видео*/
+
+section#modal {
+    min-width: 100%;
+    display: none;
+}
+section{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 150;
+}
+section .video video {
+    min-width: 30rem;
+    max-height: 480px;
+    max-width: 860px;
+}
+section .video {
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
