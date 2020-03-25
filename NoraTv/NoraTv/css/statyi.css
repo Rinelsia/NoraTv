@@ -1,0 +1,45 @@
+section{
+    color:#fff;
+}
+section .bg--fon-header, section .bg--fon-main{
+    height: 2rem;
+}
+
+section .photo{
+    height: 22rem;
+    background-color: rgba(200, 200, 200, 0.99);
+}
+section .text{
+    height: 20rem;
+/*
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+*/
+}
+/*==============*/
+section .press-content p{
+    border: 0;
+    background-color: #021021ba;
+    padding: 3rem 1rem 3rem 1rem;
+}
+section .press-content .col-4{
+    
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+        
+}
+section .col-auto, #biografia .container{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*===========================================================*/
+.container{
+    max-width: 1300px;
+}
+.photo{
+    background-image: url(../img/background/press-bg-1.jpg);
+    background-size: contain;
+}

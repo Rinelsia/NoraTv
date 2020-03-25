@@ -1,0 +1,37 @@
+/*меню и навигация*/
+nav, a, li, ul{
+    color: #fff;
+    text-decoration: none;
+}
+nav{
+/*    Настройки Flex контейнера*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+/*    ------------------------------------- */
+    width: 100%;
+    font-family: light_web;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 100;
+    background-image: linear-gradient(90deg, transparent 11%, rgba(13, 24, 37, 0.8) 38%);
+}
+.menu{
+    flex: 1 1 auto;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+li{
+    padding: 1rem 0.5rem;
+}
+.burger{
+    background-color: rgba(13, 24, 37, 0.8);
+    border-left: 1px solid #000000;
+    flex: 0 1 auto;
+}
+
+/**/
